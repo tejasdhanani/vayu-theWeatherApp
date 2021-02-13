@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | TD</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="flex">
+        <div class="container">
+            <h1>Vayu</h1>
+            <h2>the weather app</h2>
+            
+            <form id="form">
+                <input type="text" class="inputValue" placeholder="Search by Location" autofocus>
+                <img class="location-icon" src="location.png" alt="location-icon">
+                <input type="submit" style="visibility:hidden;position:absolute"/>
+            </form>
+            <div class="content">
+                <h3 class="city" id="city"></h3>
+                <div class="desc" id="desc"></div>
+                <div class="temp" id="temp"></div>
+                <h5 class="related-img-title"></h5>
+                <button class="reloadbtn"><span id="span-reloadbtn"></span></button>
+                <div class="img-container">
+                    <img class="img" id="img">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
